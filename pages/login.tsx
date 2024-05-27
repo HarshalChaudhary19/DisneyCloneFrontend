@@ -1,3 +1,4 @@
+import { Link } from 'lucide-react';
 import React from 'react';
 
 function Login() {
@@ -19,7 +20,7 @@ function Login() {
             <input type="checkbox" style={{ marginRight: '0.5rem' }} /> 
             <label style={{ fontSize: '0.875rem' }}>Remember Me</label>
           </div>
-          <a href="/register" style={{ fontSize: '0.875rem', color: '#667eea', fontWeight: 'bold' }}>New User?</a>
+          <Link href="/register" style={{ fontSize: '0.875rem', color: '#667eea', fontWeight: 'bold' }}>New User?</Link>
         </div>
         <div>
           <button type="submit" style={{ width: '100%', padding: '0.75rem', backgroundColor: '#667eea', color: '#fff', borderRadius: '0.25rem', border: 'none', cursor: 'pointer' }}><i className="fas fa-angle-double-right"></i>&nbsp;&nbsp;Login</button>

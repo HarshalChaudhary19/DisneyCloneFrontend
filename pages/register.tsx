@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
+import { Link } from 'lucide-react';
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -86,7 +87,7 @@ function Register() {
               <input type="checkbox" style={{ marginRight: '0.5rem' }} /> 
               <label style={{ fontSize: '0.875rem' }}>Remember Me</label>
             </div>
-            <a href="/login" style={{ fontSize: '0.875rem', color: '#667eea', fontWeight: 'bold' }}>Already have an account?</a>
+            <Link href="/login" style={{ fontSize: '0.875rem', color: '#667eea', fontWeight: 'bold' }}>Already have an account?</Link>
           </div>
           <div>
             <button type="submit" style={{ width: '100%', padding: '0.75rem', backgroundColor: '#667eea', color: '#fff', borderRadius: '0.25rem', border: 'none', cursor: 'pointer' }}>
